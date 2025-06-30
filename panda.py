@@ -41,7 +41,10 @@ data.columns = [                  # Edit columns
 
 print(data.head())
 
-data.to_csv(
+data.to_csv(                                 # convert data to csv file
     path_or_buf="/mnt/f/python_programming/data.csv",
     index = False
 )
+
+df = pd.read_csv("/mnt/f/python_programming/data.csv")
+print(df.head())
